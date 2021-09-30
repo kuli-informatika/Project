@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+
+::selection {
+    background: #3B185F;
+}
+
+::-moz-selection {
+    background: #3B185F;
+}
+
+*{
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #1D1D1D;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#container {
+    max-width: 100%;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.header {
+    border-bottom: 1px solid #3D3D3D;
+    padding: 16px 0 16px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger {
+    display: none;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    fill: black;
+    transition: 0.2s ease-in;
+}
+
+.icon:hover {
+    fill: white;
+    transition: 0.25s ease-in-out;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3 ease-in-out;
+    background-color: #fff;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.nav-item {
+    margin-right: 1.5rem;
+}
+
+.nav-link {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    transition: 0.2s ease-in;
+}
+
+.default-state {
+    color: #A1A1A1;
+}
+
+.nav-link:hover {
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+
+.nav-logo {
+    font-size: 16px;
+    font-weight: 500;
+    color: #A1A1A1;
+    transition: 0.2s ease-in;
+    margin-right: 12px;
+}
+
+.nav-logo:hover {
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+
+#right-menu {
+    display: flex;
+    align-items: center;
+}
+
+#content {
+    margin-top: 42px;
+    margin-bottom: 24px;
+}
+
+#content p {
+    line-height: 1.6;
+    color: #A1A1A1;
+}
+
+.class-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #FEC260;
+}
+
+#card {
+    background: #181818;
+    border-radius: 12px;
+    display: flex;
+    width: 47%;
+    position: absolute;
+    bottom: 32px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 24px 8px 24px;
+}
+
+.button-primary {
+    background: white;
+    padding: 12px 18px 12px 18px;
+    border-radius: 12px;
+    color: #1D1D1D;
+    font-weight: 700;
+    transition: 0.2s ease-in;
+}
+
+.button-primary:hover {
+    background: #3B185F;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 24px;
+    }
+
+    .nav-logo {
+        display: none;
+    }
+
+    #container {
+        width: 100%;
+    }
+
+    #card {
+        background: #181818;
+        border-radius: 12px;
+        display: flex;
+        width: 75%;
+        position: absolute;
+        bottom: 32px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 24px 8px 24px;
+    }
+
+    #card p {
+        font-size: 14px;
+    }
+
+    .button-primary {
+        font-size: 12px;
+    }
+}
